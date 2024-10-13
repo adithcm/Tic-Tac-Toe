@@ -1,10 +1,10 @@
-package com.example.tic_tac_toe
+package com.example.newproject
 
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
-import com.example.tic_tac_toe.database.SQLiteHelper
-import com.example.tic_tac_toe.databinding.ActivityPastGamesBinding
+import com.example.newproject.database.SQLiteHelper
+import com.example.newproject.databinding.ActivityPastGamesBinding
 
 class PastGamesActivity : AppCompatActivity() {
 
