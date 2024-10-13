@@ -17,12 +17,17 @@ class PastGamesActivity : AppCompatActivity() {
         binding = ActivityPastGamesBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // initialize sqlitehelper to access db
         dbHelper = SQLiteHelper(this)
 
         val pastGames = dbHelper.getAllGames().map {
             "${it.date}: ${it.winner} (Difficulty: ${it.difficulty})"
         }
+
+        // create adapter to display list of past games in listview
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, pastGames)
+
+        // set adapter to list view to see all past games
         binding.listViewGames.adapter = adapter
     }
 }
