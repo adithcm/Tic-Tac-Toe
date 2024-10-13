@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.newproject"
+    namespace = "com.example.tic_tac_toe"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.newproject"
+        applicationId = "com.example.tic_tac_toe"
         minSdk = 29
         targetSdk = 34
         versionCode = 1
