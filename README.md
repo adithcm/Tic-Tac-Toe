@@ -24,7 +24,7 @@ This project is a mobile application that implements the classic Tic-Tac-Toe gam
 ### Instructions
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/tictactoe-game.git
+   git clone https://github.com/adithcm/CSE535-Project2.git
    cd tictactoe-game
 2. Open the project in **Android Studio** (for Android) or **Xcode** (for iOS).
 3. Connect your phone via USB or set up an emulator in your IDE.
