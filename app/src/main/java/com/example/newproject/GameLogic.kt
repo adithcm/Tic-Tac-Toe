@@ -1,4 +1,4 @@
-package com.example.tic_tac_toe.logic
+package com.example.newproject.logic
 
 // Constants representing the players and empty cells
 const val PLAYER_X = "X"
