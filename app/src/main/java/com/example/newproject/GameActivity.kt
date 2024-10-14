@@ -19,7 +19,7 @@ class GameActivity : AppCompatActivity() {
     private var winner: String? = null
     private lateinit var dbHelper: SQLiteHelper
     private lateinit var preferences: SharedPreferences
-    private var difficulty = "Hard"  // Default to Hard mode
+    private var difficulty = "Hard"
 
     private val settingsLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
@@ -64,7 +64,7 @@ class GameActivity : AppCompatActivity() {
 
         binding.btnSettings.setOnClickListener {
             val intent = Intent(this, SettingsActivity::class.java)
-            settingsLauncher.launch(intent)  // Open SettingsActivity without resetting the game
+            settingsLauncher.launch(intent)
         }
     }
 
@@ -114,14 +114,13 @@ class GameActivity : AppCompatActivity() {
         return when (difficulty) {
             "Easy" -> getRandomMove(board)
             "Medium" -> {
-                if (Random.nextFloat() < 0.5) getRandomMove(board) else bestMove(board)  // 50% random, 50% optimal
+                if (Random.nextFloat() < 0.5) getRandomMove(board) else bestMove(board)
             }
             "Hard" -> bestMove(board)
             else -> bestMove(board)
         }
     }
 
-    // Helper function to get a random move
     private fun getRandomMove(board: Array<Array<String>>): Pair<Int, Int>? {
         val emptyCells = mutableListOf<Pair<Int, Int>>()
         for (i in 0..2) {
