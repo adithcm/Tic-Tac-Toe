@@ -1,4 +1,4 @@
-package com.example.tic_tac_toe
+package com.example.newproject
 
 import android.content.Intent
 import android.content.SharedPreferences
@@ -6,9 +6,9 @@ import android.os.Bundle
 import androidx.activity.result.contract.ActivityResultContracts
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.example.tic_tac_toe.databinding.ActivityGameBinding
-import com.example.tic_tac_toe.database.SQLiteHelper
-import com.example.tic_tac_toe.logic.*
+import com.example.newproject.databinding.ActivityGameBinding
+import com.example.newproject.database.SQLiteHelper
+import com.example.newproject.logic.*
 import kotlin.random.Random
 
 class GameActivity : AppCompatActivity() {
