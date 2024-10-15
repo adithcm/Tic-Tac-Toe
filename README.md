@@ -36,7 +36,6 @@ This project is a mobile application that implements the classic Tic-Tac-Toe gam
 3. Select a difficulty level (Easy, Medium, Hard) from the **Settings** screen.
 4. Play by tapping an empty space on the game board. The AI will make a move based on the selected difficulty level.
 5. Once the game ends, you can view the result on the **Past Games** screen, where the date, winner, and difficulty are stored.
-6. *(Extra Credit)*: If playing in human-vs-human mode, connect via Bluetooth to another device, and play in real-time with another player.
 
 ### Minimax Algorithm with Alpha-Beta Pruning
 
@@ -44,7 +43,7 @@ The AI uses the Minimax algorithm to make optimal moves. Alpha-beta pruning is i
 
 ### Storing Game Data
 
-The app stores past game data (date, winner, and difficulty mode) on the device using SQLite or DataStore. This data persists even after the app is closed.
+The app stores past game data (date, winner, and difficulty mode) on the device using SQLite. This data persists even after the app is closed.
 
 ### Contribution Guidelines
 
